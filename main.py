@@ -175,8 +175,12 @@ print(my_bool)
 # "num1 and num2 are equal"
 
 # You must display the value of the user input instead of num1 and num2.
-# num1 = input("Enter a number:")
-# num2 = input("Enter another number:")
+num1 = input("Enter a number:")
+num2 = input("Enter another number:")
+
+if num1 > num2:
+   print(num1 + " is greater than " +  num2 )
+e
 
 # f"{num1} is greater than {num2}"
 # "num2 is greater than num1"

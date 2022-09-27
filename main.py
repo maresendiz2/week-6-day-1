@@ -12,23 +12,23 @@
 # Append the value of current to the end of the list seconds Please use the list.append() method to do that.
 
 
-seconds = [1.23, 1.45, 1.02]
-current = 1.11
-seconds.append(1.11)
-print(seconds)
-# Remove item 1.45 from seconds.
-seconds = [1.23, 1.45, 1.02, 1.11]
-seconds.remove(1.45)
-print(seconds)
+# seconds = [1.23, 1.45, 1.02]
+# current = 1.11
+# seconds.append(1.11)
+# print(seconds)
+# # Remove item 1.45 from seconds.
+# seconds = [1.23, 1.45, 1.02, 1.11]
+# seconds.remove(1.45)
+# print(seconds)
 
-# Remove items 1.45, 1.02, and 1.11 from seconds.
-seconds = [1.23, 1.45, 1.02, 1.11]
-newSeconds = seconds[1:]
-print(newSeconds)
-seconds.remove(1.45)
-seconds.remove(1.02)
-seconds.remove(1.11)
-print(seconds)
+# # Remove items 1.45, 1.02, and 1.11 from seconds.
+# seconds = [1.23, 1.45, 1.02, 1.11]
+# newSeconds = seconds[1:]
+# print(newSeconds)
+# seconds.remove(1.45)
+# seconds.remove(1.02)
+# seconds.remove(1.11)
+# print(seconds)
 ################################comparison operators#########################
 #remember....
 # > greater
@@ -38,10 +38,26 @@ print(seconds)
 # == equal
 # != different or not equal to
 
-# Comparison Operators Practice 1:
-# ask the user for their age
-# if the user's  is between 18 - 21 , print they can vote, other wise print better luck next time.
+#learning comparison operators
+# my_bool = 10 == 20
+# print(my_bool) #false
 
+# my_bool = 5 + 5 == 10 - 0
+# print(my_bool) #true
+
+# my_bool = 'white' == 'White'.lower()
+# print(my_bool) #false w/ .lower() -> true
+
+# my_bool = 4 < 5 and 5 > 6
+# print(my_bool)
+# # Comparison Operators Practice 1:
+# # ask the user for their age
+# age = int(input("What is your age? "))
+# # if the user's  is between 18 - 21 , print they can vote, other wise print better luck next time.
+# if age >= 18 and age <= 21:
+#   print("You can vote.")
+# else:
+#   print("Better luck next time.")
 
 
 
@@ -49,37 +65,55 @@ print(seconds)
 # Comparison Operators Practice  2:
 # Create two variables (num1 and num2) with the following values: 36 and 17. Check if num1 is greater than or equal to num2 and store the result of that comparison in a variable called my_bool
 
-
-
-
+num1 = 36
+num2 = 17
+my_bool = num1 >= num2
+print(my_bool)
 # Comparison Operators Practice  3:
 # Create two variables (num1 and num2):
 # Inside num1, store the result of the square root of 25
+import math
+num1 = math.sqrt(25)
 # Inside num2, store the number 5.
+num2 = 5
 # Check if num1 is equal to num2 and store the result of that comparison in a variable called my_bool.
-
+my_bool = num1 == num2
+print(my_bool)
 
 # Comparison Operators Practice #4:
 # Create two variables (num1 and num2):
-
+num1 = 64*3
+num2 = 24*8
 # Inside num1, store the result of 64 x 3
 
 # Inside num2, store the result of 24 x 8
 
 # Check if num1 is different from num2 and store the result of that comparison in a variable called my_bool.
 
-
+my_bool = num1 != num2
+print(my_bool)
 
 
 
 
 
 ##############################logical operators##################################################
+#logical operations lesson
+# my_bool = (55 == 10) and (5 == 2 * 3)
+# print(my_bool)
 
+# my_bool = 1 == 10 or 3 == 3
+# print(my_bool)
+
+# text = "this sentence is short"
+# my_bool = ('sentence' in text) and ('python' not in text)
+# print(my_bool)
 
 # Logical Operators Practice #1
 # Create three variables (num1, num2, and num3):
-
+num1 = 36
+num2 = 72/2
+num3 = 48
 # Inside num1, store the value 36
 
 # Inside num2, stores the result of the operation 72/2
@@ -87,13 +121,16 @@ print(seconds)
 # Inside num3, store the value 48
 
 # Check if num1 is greater than num2, and less than num3. Store the result of that comparison in a variable called my_bool.
-
+my_bool = num1 > num2 and num1 < num3
+print(my_bool)
 
 
 
 # Logical Operators Practice #2
 # Create three variables (num1, num2, and num3):
-
+num1 = 36
+num2 = 72/2
+num3 = 48
 # Inside num1, store the value 36
 
 # Inside num2, stores the result of the operation 72/2
@@ -102,7 +139,8 @@ print(seconds)
 
 # Check if num1 is greater than num2, or less than num3. Store the result of that comparison in a variable called my_bool.
 
-
+my_bool = num1 > num2 or num1 < num3
+print(my_bool)
 
 # Logical Operators Practice #3
 # Check if the words:
@@ -115,8 +153,12 @@ print(seconds)
 
 # "When something is important enough, you do it even if the odds are against you" - Elon Musk
 
-
-
+word1 = "success"
+word2 = "technology"
+text = "When something is important enough, you do it even if the odds are against you"
+my_bool = 'success' in text and 'technology' in text
+print(my_bool)
+            
 
 
 ########################################decision making in python#####################################
